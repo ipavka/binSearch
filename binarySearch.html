@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадаю число</title>
+    <style>
+        body {
+            margin: auto;
+            width: 100%;
+            max-width: 400px;
+            background-color: #e7e7e7;
+        }
+        button {
+            font-size: 24px;
+            padding: 12px 28px;
+            background-color: #76aed0; color: black;
+            padding: 12px 28px;
+            border-radius: 15px;
+            width: 100%;
+            margin: 5px;
+        }
+        #buttTrue {
+            background-color: #de91fc;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .userVar {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+
+        .but {
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Я угадаю число от 1 до 100</h1>
+<div class="game">
+    <div class="userVar"></div>
+    <div class="but">
+        <button id="buttMax" onclick="seyHello(this)">Больше</button>
+        <button id="buttMin" onclick="seyHello(this)">Меньше</button>
+    </div>
+    <button id="buttTrue" onclick="seyHello(this)">Угадал!</button>
+</div>
+<script src="binarySearch.js"></script>
+</body>
+</html>
