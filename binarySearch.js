@@ -9,7 +9,7 @@ let userVariant = document.querySelector('.userVar').innerHTML =
 
 function seyHello(obj) {
         userTry ++;
-        if (userTry === 9) {
+        if (userTry === 10) {
                 document.querySelector('body').innerHTML =
                     `Я угалал! Твоё число <br> <h3>${variant}</h3><h3>Попытки закончились!!!</h3>
                        <button onclick="location.reload()">Начать заново?</button> `
